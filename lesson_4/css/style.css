@@ -1,0 +1,58 @@
+@import url("reset.css");
+
+.title {
+	color: hotpink;
+}
+
+.text > p{
+	color: slateblue;
+}
+
+.text ~ p {
+	color: violet;
+}
+
+.text + p {
+	color: rgb(77, 245, 228);
+}
+
+#sarraceniya{
+	color: rgb(71, 209, 131);
+}
+
+.content .subtitle{
+	color: orange;	
+}
+
+.subtitle {
+	color: orchid;
+}
+
+li.subitem a{
+	color: brown;
+}
+
+.item a{	
+	color: turquoise;
+}
+
+a{
+	color: tomato;
+}
+
+.block__container {
+	/*color: chartreuse;*/
+}
+[class*="__container"] {
+	color: chartreuse;
+}
+
+
+
+
+
+
+
+
+
+
