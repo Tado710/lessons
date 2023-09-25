@@ -1,0 +1,19 @@
+@font-face{
+	font-family: "Segoe Script";
+	src: 
+	url("../fonts/segoescript-Semi-Bold.woff") format("woff"),
+	url("../fonts/segoescript-Semi-Bold.woff2") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;	
+}
+
+@font-face{
+	font-family: "Segoe Script";
+	src: 
+	url("../fonts/segoescript-Bold.woff") format("woff"),
+	url("../fonts/segoescript-Bold.woff2") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;	
+}
