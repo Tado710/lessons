@@ -99,6 +99,7 @@ body {
 .item {
 	margin-bottom: 23px;
 	padding-left: 35px;
+	font-size: 18px;
 	line-height: 1.2;
 	color: #7d7d7d;
 }
