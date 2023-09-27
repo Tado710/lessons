@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+@import url("reset.css");
+
+body {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+}
+
+.consalting {
+	margin: 0 auto 55px;
+	max-width: 692px;
+	display: block;
+}
+
+.image,
+.jewellery-image1,
+.jewellery-image2 {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.image {
+	margin-bottom: 37px;
+}
+
+.title,
+.consalting span,
+.subtitle,
+.benefits-content .text {
+	line-height: 1.27;
+}
+
+.title {
+	margin-bottom: 3px;
+	font-family: Poppins;
+	font-size: 30px;
+	text-transform: capitalize;
+	font-weight: 600;
+	color: #37393f;
+}
+
+.text {
+	margin-bottom: 42px;
+}
+
+.text,
+.multimedia {
+	line-height: 1.46;
+	color: #7d7d7d;
+}
+
+.multimedia span {
+	display: inline-block;
+	margin-bottom: 12px;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+	color: #6b77e5;
+}
+
+.content {
+	margin-bottom: 39px;
+}
+
+.benefits {
+	display: block;
+	font-size: 0;
+}
+
+.benefits .image {
+	margin: 0 29px 0 0;
+}
+
+.benefits-content {
+	display: inline-block;
+	max-width: 332px;
+	vertical-align: top;
+}
+
+.subtitle {
+	margin-bottom: 15px;
+	font-family: Poppins;
+	font-size: 25px;
+	font-weight: 600;
+	color: #37393f;
+}
+
+.benefits-content .text {
+	margin-bottom: 23px;
+	color: #40ddb6;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.item {
+	margin-bottom: 23px;
+	padding-left: 35px;
+	line-height: 1.2;
+	color: #7d7d7d;
+}
+
+.jewellery {
+	max-width: 1169px;
+	margin: 0 auto;
+	font-size: 0;
+}
+.jewellery-content {
+	display: inline-block;
+	padding-top: 21px;
+	margin-right: 38px;
+	max-width: 563px;
+}
+.top-title {
+	margin-bottom: 13px;
+	font-family: Inter;
+	font-size: 28px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #d06b00;
+}
+.jewellery-title {
+	margin-bottom: 25px;
+	font-family: DM Serif Text;
+	font-size: 59px;
+	line-height: 1.46;
+	text-transform: capitalize;
+}
+.jewellery-text {
+	font-family: Inter;
+	font-size: 20px;
+	line-height: 1.8;
+	color: #474747;
+}
+
+.jewellery-images {
+	display: inline-block;
+	vertical-align: top;
+}
+.jewellery-image1 {
+	margin-right: 22px;
+}
