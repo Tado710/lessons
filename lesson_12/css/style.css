@@ -64,7 +64,7 @@ body {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	width: 120px;
+	width: 130px;
 	padding: 5px;
 	background-color: mediumaquamarine;
 }
@@ -137,7 +137,7 @@ body {
 .block__top {
 	padding: 15px 20px;
 	text-align: center;
-	background-color: rgb(238, 31, 169);
+	background-color: rgb(243, 124, 203);
 	border-radius: 5px;
 }
 .block__title {
