@@ -363,8 +363,10 @@ body {
 	cursor: pointer;
 }
 
-.radio__label::before {
-	content: "";
+.radio__label span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 18px;
 	height: 18px;
 	flex: 0 0 18px;
@@ -373,10 +375,7 @@ body {
 	background-color: #fff;
 }
 
-.radio__label::after {
-	position: absolute;
-	top: 6px;
-	left: 3px;
+.radio__label span::after {	
 	content: "";
 	width: 12px;
 	height: 12px;
@@ -386,7 +385,7 @@ body {
 	transition: background-color 0.3s;
 }
 
-.radio__input:checked + .radio__label::after {
+.radio__input:checked + .radio__label span::after  {
 	background-color: rgba(128, 125, 126, 1);
 }
 /*=============================================*/
