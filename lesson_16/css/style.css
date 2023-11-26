@@ -1,0 +1,610 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+	font-family: "Causten", sans-serif;
+	font-size: 18px;
+	color: #3c4242;
+}	
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: 925px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+/*===================================*/
+.button {
+	flex-shrink: 0;
+	border-radius: 8px;
+	padding: 12px 40px;
+	text-align: center;
+	font-family: "Causten";
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	background-color: #8a33fd;
+	transition: background-color 0.3s ease 0s;
+}
+
+.button--white {
+	font-weight: 700;
+	color: #807d7e;
+	background-color: #f6f6f6;
+}
+
+.button--f {
+	padding: 16px 20px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.button:hover {
+	background-color: #af79f7;
+}
+
+.button--white:hover {
+	color: #fff;
+	background-color: #8a33fd;
+}
+
+.page__info {
+	margin-bottom: 50px;
+}
+.info__top:not(:last-child),
+.checkout__top:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+.title,
+.subtitle {
+	font-family: "CoreSansC";
+	font-weight: 600;
+	color: #3c4242;
+}
+
+.title {
+	font-size: 28px;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+}
+
+.info__title:not(:last-child),
+.checkout__title:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.subtitle {
+	font-size: 22px;
+	line-height: 1.5;
+}
+
+.form-info__item:not(:last-child),
+.form-info__item--textarea:not(:last-child),
+.form-checkout__item:not(:last-child),
+.form-checkout__item-third:not(:last-child) {
+	margin-bottom: 31px;
+}
+
+.form-info__body {
+	margin-bottom: 33px;
+}
+
+.form-info__item {
+	display: flex;
+	column-gap: 42px;
+}
+
+.form-info__item--textarea{
+	flex-direction: column;
+}
+
+.form-info__line,
+.form-checkout__line,
+.form-payment__line {
+	flex: 0 1 50%;
+}
+
+.form-info__label {
+	margin-bottom: 10px;
+	display: inline-block;
+	font-family: "Causten";
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0.36px;
+	color: #3c4242;
+}
+
+.form-info__input,
+.select-state {
+	height: 70px;
+	padding: 0 22px;
+}
+
+.form-info__input,
+.select-state,
+.form-checkout__input {
+	width: 100%;
+	border-radius: 8px;
+	background: #f6f6f6;
+}
+
+.form-info__input::placeholder,
+.select-state {
+	font-size: 16px;
+}
+
+.form-info__input::placeholder,
+.select-state,
+.form-checkout__input::placeholder,
+.form-payment__input::placeholder {
+	font-family: "Causten";
+	font-weight: 400;
+	text-transform: capitalize;
+	color: #807d7e;
+	transition: opacity 0.3s;
+}
+
+.form-info__input:focus::placeholder,
+.form-checkout__input:focus::placeholder,
+.form-info__textarea:focus::placeholder,
+.form-payment__input:focus::placeholder,
+.form-contact__input:focus::placeholder,
+.form-payment__input:focus::placeholder,
+.form-contact__textarea:focus::placeholder {
+	opacity: 0;
+}
+
+.form-info__textarea {
+	width: 100%;
+	height: 149px;
+	padding: 17px 22px;
+	line-height: 1.2;
+	resize: vertical;
+	border-radius: 8px;
+	background: #f6f6f6;
+	transition: opacity 0.3s;
+}
+
+.form-info__checkbox:not(:last-child) {
+	margin-bottom: 60px;
+}
+
+.checkbox {
+	position: relative;
+}
+
+.checkbox:not(:last-child) {
+	margin-bottom: 15px;
+}
+.checkbox__input,
+.radio__input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.checkbox__label {
+	display: inline-flex;
+	align-items: center;
+	gap: 11px;
+	cursor: pointer;
+	font-family: "Causten";
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #3c4242;
+}
+
+.checkbox__label::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	flex: 0 0 20px;
+	border: 1px solid rgba(190, 188, 189, 1);
+	background-color: #fff;
+	transition: background-color 0.3s ease 0s;
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+	background-color: #8a33fd;
+}
+
+.form-info__buttons {
+	display: flex;
+	column-gap: 30px;
+}
+
+/*=====================================*/
+.page__checkout {
+	margin-bottom: 50px;
+}
+
+.checkout__container {
+	max-width: 802px;
+}
+
+.checkout__title {
+	display: flex;
+	column-gap: 15px;
+}
+.checkout__title::before {
+	content: "";
+	flex: 0 0 6px;
+	border-radius: 10px;
+	background-color: #8a33fd;
+}
+.checkout__subtitle:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.checkout__label:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.checkout__label {
+	font-family: "Causten";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #3c4242;
+}
+
+.form-checkout:not(:last-child),
+.method:not(:last-child) {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #bebcbd;
+}
+
+.form-checkout__body {
+	margin-bottom: 31px;
+}
+.form-checkout__item {
+	display: flex;
+	column-gap: 38px;
+}
+
+.form-checkout__label,
+.select-state__item {
+	margin-bottom: 10px;
+	display: inline-block;
+	font-family: "Causten";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0.36px;
+	color: #3c4242;
+}
+.form-checkout__input,
+.form-checkout__checkbox,
+.form-checkout .select-state {
+	height: 49px;
+	padding: 0 20px;
+}
+
+.form-checkout__input::placeholder,
+.form-checkout .select-state {
+	font-size: 14px;
+}
+
+.form-checkout__item-third {
+	display: flex;
+	column-gap: 32px;
+}
+
+.form-checkout__item-third .form-checkout__line {
+	flex: 0 1 33.333%;
+}
+.form-checkout__button {
+	margin-bottom: 36px;
+}
+
+.form-checkout .checkbox__label {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	font-family: "Causten";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #3c4242;
+}
+
+.checkbox__label::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	flex: 0 0 18px;
+	border: 1px solid rgba(190, 188, 189, 1);
+	background-color: #fff;
+	transition: background-color 0.3s ease 0s;
+}
+/*=============================*/
+
+.form-address,
+.method__body {
+	padding: 38px 48px 38px 28px;
+	border-radius: 12px;
+	background-color: #f6f6f6;
+}
+
+.radio {
+	position: relative;
+}
+
+.radio__label {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	column-gap: 19px;
+	font-family: "Causten";
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #3c4242;
+	cursor: pointer;
+}
+
+.radio__label::before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	flex: 0 0 18px;
+	border-radius: 50%;
+	border: 1px solid rgba(60, 66, 66, 1);
+	background-color: #fff;
+}
+
+.radio__label::after {
+	position: absolute;
+	top: 6px;
+	left: 3px;
+	content: "";
+	width: 12px;
+	height: 12px;
+	flex: 0 0 12px;
+	border-radius: 50%;
+	background-color: transparent;
+	transition: background-color 0.3s;
+}
+
+.radio__input:checked + .radio__label::after {
+	background-color: rgba(128, 125, 126, 1);
+}
+/*=============================================*/
+
+.checkout__address:not(:last-child),
+.method:not(:last-child) {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #bebcbd;
+}
+.method__label:not(:last-child) {
+	margin-bottom: 8px;
+}
+
+.method__label,
+.method__cost {
+	font-family: "Causten";
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #3c4242;
+}
+.form-address__radio:not(:last-child),
+.method__item:not(:last-child),
+.form-payment__block:not(:last-child) {
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #bebcbd;
+}
+.method__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	column-gap: 10px;
+}
+.method__text {
+	font-family: "Causten";
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2;
+	color: #807d7e;
+}
+/*===================================*/
+.form-payment__body {
+	margin-bottom: 50px;
+	padding: 45px 48px 45px 28px;
+	border-radius: 12px;
+	background-color: #f6f6f6;
+}
+
+.form-payment__content {
+	padding: 0 23px 0 37px;
+}
+
+.form-payment__text:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.form-payment__text {
+	font-family: "Causten";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #3c4242;
+}
+
+.form-payment__cards {
+	margin-bottom: 31px;
+}
+
+.form-payment__item:not(:last-child) {
+	margin-bottom: 28px;
+}
+
+.form-payment__item {
+	display: flex;
+	column-gap: 30px;
+}
+
+.form-payment__line--pass .form-payment__input {
+	background: #fff url("../img/icons/eye.svg") 92% 50% no-repeat;
+}
+
+.form-payment__input {
+	width: 100%;
+	height: 52px;
+	padding: 0 20px;
+	border-radius: 8px;
+	background-color: #fff;
+}
+
+.form-payment__radio:not(:last-child) {
+	margin-bottom: 5px;
+	padding: 0;
+	border: 0;
+}
+
+.radio {
+	display: flex;
+}
+
+.radio__label:not(:last-child) {
+	margin-bottom: 5px;
+}
+.radio__label {
+	font-family: "Causten";
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #3c4242;
+}
+
+.cards {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+/*==============================*/
+.page__contact {
+	margin-bottom: 50px;
+}
+
+.contact__top {
+	margin: 0 auto 40px;
+	max-width: 500px;
+	text-align: center;
+}
+.contact__label {
+	margin-bottom: 16px;
+	justify-content: center;
+}
+.contact__label {
+	display: flex;
+	align-items: center;
+	column-gap: 6px;
+	font-family: "Inter";
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.2;
+	text-transform: capitalize;
+	color: #37393f;
+}
+.contact__label::before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	flex: 0 0 12px;
+	background-color: #40ddb6;
+}
+.contact__title {
+	font-family: "Poppins";
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: capitalize;
+	color: #37393f;
+}
+
+.contact__container {
+	max-width: 1220px;
+}
+.form-contact__body {
+	margin-bottom: 50px;
+}
+
+.form-contact__item:not(:last-child) {
+	margin-bottom: 28px;
+}
+
+.form-contact__item {
+	display: flex;
+	column-gap: 35px;
+}
+.form-contact__line {
+	flex: 0 1 50%;
+}
+.form-contact__input,
+.form-contact__textarea {
+	width: 100%;
+	border: 1px solid #ddd;
+	background: #f8f8f8;
+}
+
+.form-contact__input {
+	height: 65px;
+	padding: 0 40px;
+}
+
+.form-contact__input::placeholder,
+.form-contact__textarea::placeholder {
+	font-family: "Inter";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #37393f;
+	transition: opacity 0.3s;
+}
+
+.form-contact__textarea {
+	height: 222px;
+	padding: 22px 40px;
+	resize: vertical;
+	transition: opacity 0.3s;
+}
+.form-contact__button {
+	margin: 0 auto;
+	padding: 22px 61px;
+	text-align: center;
+	font-family: "Inter";
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.2;
+	text-transform: capitalize;
+	color: #fff;
+	background-color: #6B77E5;
+	transition: background-color 0.3s;
+}
+
+.form-contact__button:hover {
+	background-color: #8591f8;
+	}
