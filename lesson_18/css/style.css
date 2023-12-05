@@ -302,6 +302,9 @@ body {
 	.header__logo {
 		font-size: 27px;
 	}
+	.header__action {
+		margin-right: 36px;
+	}
 }
 /*=========================*/
 
