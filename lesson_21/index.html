@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 21</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">
+					<img src="img/logo.svg" alt="Logo">
+				</a>
+				<div class="header__menu menu">
+					<input class="menu__input" aria-label="menu button" id="icon-menu" name="icon-menu" type="checkbox">
+					<label class="menu__icon-menu" for="icon-menu"><span></span></label>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item search">
+								<input class="search__input" type="text" name="search" placeholder="Search">
+							</li>
+							<li class="menu__item"><a href="#" class="menu__link menu__link--active">Shop</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Men</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Women</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Combos</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Joggers</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="search">
+					<input class="search__input" type="text" name="search" placeholder="Search">
+				</div>
+				<div class="header__action action">
+					<button type="button" class="action__item" aria-label="favorite button">
+						<img src="img/icons/favorite.svg" alt="favorite">
+					</button>
+					<button type="button" class="action__item" aria-label="user button">
+						<img src="img/icons/user.svg" alt="user">
+					</button>
+					<button type="button" class="action__item" aria-label="сart button">
+						<img src="img/icons/сart.svg" alt="сart">
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__hero hero">
+				<img src="img/hero/hero.webp" alt="Hero">
+				<div class="hero__content content-hero">
+					<h4 class="content-hero__label">T-shirt / Tops</h4>
+					<h1 class="content-hero__title">Summer
+						Value Pack</h1>
+					<h3 class="content-hero__subtitle">cool / colorful / comfy</h3>
+					<a href="#" class="content-hero__button button">Shop Now</a>
+				</div>
+
+				<div class="hero__arrows">
+					<button type="button" class="hero__arrow hero__arrow--prev" aria-label="arrow button">
+						<img src="img/icons/hero/arrow-r.svg" alt="Arrow">
+					</button>
+					<button type="button" class="hero__arrow hero__arrow--next" aria-label="arrow button">
+						<img src="img/icons/hero/arrow-r.svg" alt="Arrow">
+					</button>
+				</div>
+				<button type="button" class="hero__indicators">
+					<img src="img/icons/indicators.svg" alt="Indicators">
+				</button>
+			</section>
+			<div class="page__explore explore">
+				<div class="explore__container">
+					<article class="explore__item item-explore">
+						<img src="img/explore/01.webp" alt="Explore">
+						<div class="item-explore__body">
+							<h4 class="item-explore__label">Low Price</h4>
+							<h2 class="item-explore__title">High Coziness</h2>
+							<h3 class="item-explore__discount">UPTO 50% OFF</h3>
+							<a href="#" class="item-explore__button">Explore Items</a>
+						</div>
+					</article>
+					<article class="explore__item item-explore">
+						<img src="img/explore/02.webp" alt="Explore">
+						<div class="item-explore__body">
+							<h4 class="item-explore__label">Beyoung Presents</h4>
+							<h2 class="item-explore__title">Breezy Summer Style</h2>
+							<h3 class="item-explore__discount">UPTO 50% OFF</h3>
+							<a href="#" class="item-explore__button">Explore Items</a>
+						</div>
+					</article>
+				</div>
+			</div>
+			<section class="page__arrival arrival">
+				<div class="arrival__container">
+					<h2 class="arrival__title title-section">New Arrival</h2>
+					<div class="arrival__body">
+						<div class="arrival__items">
+							<article class="arrival__item item-arrival">
+								<a href="#" class="item-arrival__image">
+									<img src="img/arrival/01.webp" alt="Arrival">
+								</a>
+								<h3 class="item-arrival__title">
+									<a href="#" class="item-arrival__title-link">Knitted Joggers</a>
+								</h3>
+							</article>
+							<article class="arrival__item item-arrival">
+								<a href="#" class="item-arrival__image">
+									<img src="img/arrival/02.webp" alt="Arrival">
+								</a>
+								<h3 class="item-arrival__title">
+									<a href="#" class="item-arrival__title-link">Full Sleeve</a>
+								</h3>
+							</article>
+							<article class="arrival__item item-arrival">
+								<a href="#" class="item-arrival__image">
+									<img src="img/arrival/03.webp" alt="Arrival">
+								</a>
+								<h3 class="item-arrival__title">
+									<a href="#" class="item-arrival__title-link">Active T-Shirts</a>
+								</h3>
+							</article>
+							<article class="arrival__item item-arrival">
+								<a href="#" class="item-arrival__image">
+									<img src="img/arrival/04.webp" alt="Arrival">
+								</a>
+								<h3 class="item-arrival__title">
+									<a href="#" class="item-arrival__title-link">Urban Shirts</a>
+								</h3>
+							</article>
+						</div>
+						<div class="arrival__arrows">
+							<button type="button" class="arrival__arrow arrival__arrow-left" aria-label="arrow button">
+								<img src="img/icons/arrow-l.svg" alt="arrow">
+							</button>
+							<button type="button" class="arrival__arrow arrival__arrow-right" aria-label="arrow button">
+								<img src="img/icons/arrow-l.svg" alt="arrow">
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__saving saving">
+				<div class="saving__container">
+					<h2 class="saving__title title-section">Big Saving Zone</h2>
+					<div class="saving__items">
+						<article class="saving__item item-saving item-saving--white">
+							<div class="item-saving__image">
+								<img src="img/saving/01.webp" alt="Saving">
+							</div>
+							<div class="item-saving__content">
+								<h3 class="item-saving__title">
+									<a href="#" class="item-saving__title-link">Hawaiian Shirts</a>
+								</h3>
+								<div class="item-saving__text">Dress up in summer vibe</div>
+								<div class="item-saving__discount">UPTO 50% OFF</div>
+								<div class="item-saving__action">
+									<button class="item-saving__arrow">
+										<img src="img/icons/arrow-bw.svg" alt="Arrow">
+									</button>
+									<a href="#" class="item-saving__button item-saving__button--white">SHOP NOW</a>
+								</div>
+							</div>
+						</article>
+						<article class="saving__item item-saving item-saving--white">
+							<div class="item-saving__image">
+								<img src="img/saving/02.webp" alt="Saving">
+							</div>
+							<div class="item-saving__content">
+								<a href="#" class="item-saving__button item-saving__button--black">Limited Stock</a>
+								<h3 class="item-saving__title">
+									<a href="#" class="item-saving__title-link">Printed<br> T-Shirt</a>
+								</h3>
+								<div class="item-saving__text">New Designs Every Week</div>
+								<div class="item-saving__discount">UPTO 40% OFF</div>
+								<div class="item-saving__action">
+									<button class="item-saving__arrow">
+										<img src="img/icons/arrow-bw.svg" alt="Arrow">
+									</button>
+									<a href="#" class="item-saving__button item-saving__button--white">SHOP NOW</a>
+								</div>
+							</div>
+						</article>
+						<article class="saving__item item-saving">
+							<div class="item-saving__image">
+								<img src="img/saving/03.webp" alt="Saving">
+							</div>
+							<div class="item-saving__content">
+								<h3 class="item-saving__title">
+									<a href="#" class="item-saving__title-link">Cargo Joggers</a>
+								</h3>
+								<div class="item-saving__text">Move with style & comfort</div>
+								<div class="item-saving__discount">UPTO 50% OFF</div>
+								<div class="item-saving__action">
+									<button class="item-saving__arrow">
+										<img src="img/icons/arrow-b.svg" alt="Arrow">
+									</button>
+									<a href="#" class="item-saving__button">SHOP NOW</a>
+								</div>
+							</div>
+						</article>
+						<article class="saving__item item-saving">
+							<div class="item-saving__image">
+								<img src="img/saving/04.webp" alt="Saving">
+							</div>
+							<div class="item-saving__content">
+								<h3 class="item-saving__title">
+									<a href="#" class="item-saving__title-link">Urban Shirts</a>
+								</h3>
+								<div class="item-saving__text">Live In Confort</div>
+								<div class="item-saving__discount">FLAT 60% OFF</div>
+								<div class="item-saving__action">
+									<button class="item-saving__arrow">
+										<img src="img/icons/arrow-b.svg" alt="Arrow">
+									</button>
+									<a href="#" class="item-saving__button">SHOP NOW</a>
+								</div>
+							</div>
+						</article>
+						<article class="saving__item item-saving">
+							<div class="item-saving__image">
+								<img src="img/saving/05.webp" alt="Saving">
+							</div>
+							<div class="item-saving__content">
+								<h3 class="item-saving__title">
+									<a href="#" class="item-saving__title-link">Oversized T-Shirts</a>
+								</h3>
+								<div class="item-saving__text">Street Style Icon</div>
+								<div class="item-saving__discount">FLAT 60% OFF</div>
+								<div class="item-saving__action">
+									<button class="item-saving__arrow">
+										<img src="img/icons/arrow-b.svg" alt="Arrow">
+									</button>
+									<a href="#" class="item-saving__button">SHOP NOW</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__fashion fashion">
+				<div class="fashion__body">
+					<div class="fashion__item">
+						<div class="fashion__content content-fashion">
+							<h2 class="content-fashion__title">WE MADE YOUR EVERYDAY FASHION BETTER!</h2>
+							<div class="content-fashion__text">
+								<p>
+									In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range -
+									Comfortable & Affordable fashion 24/7
+								</p>
+							</div>
+							<a href="#" class="content-fashion__button button">Shop Now</a>							
+						</div>
+					</div>
+					<div class="fashion__item"></div>
+				</div>
+			</section>
+			<section class="page__men men">
+				<div class="men__container">
+					<h2 class="men__title title-section">Categories For Men</h2>
+					<div class="men__items">
+						<article class="men__item item-category">
+							<a href="#" class="item-category__image">
+								<img src="img/men/01.webp" alt="Product for men">
+							</a>
+							<div class="item-category__content">
+								<div class="item-category__body">
+									<h3 class="item-category__title">
+										<a href="#" class="item-category__link-title">Shirts</a>
+									</h3>
+									<div class="item-category__text">Explore Now!</div>
+								</div>
+								<a href="#" class="item-category__link" aria-label="item-category link"></a>
+							</div>
+						</article>
+						<article class="men__item item-category">
+							<a href="#" class="item-category__image">
+								<img src="img/men/02.webp" alt="Product for men">
+							</a>
+							<div class="item-category__content">
+								<div class="item-category__body">
+									<h3 class="item-category__title">
+										<a href="#" class="item-category__link-title">Printed T-Shirts</a>
+									</h3>
+									<div class="item-category__text">Explore Now!</div>
+								</div>
+								<a href="#" class="item-category__link" aria-label="item-category link"></a>
+							</div>
+						</article>
+						<article class="men__item item-category">
+							<a href="#" class="item-category__image">
+								<img src="img/men/03.webp" alt="Product for men">
+							</a>
+							<div class="item-category__content">
+								<div class="item-category__body">
+									<h3 class="item-category__title">
+										<a href="#" class="item-category__link-title">Plain T-Shirt</a>
+									</h3>
+									<div class="item-category__text">Explore Now!</div>
+								</div>
+								<a href="#" class="item-category__link" aria-label="item-category link"></a>
+							</div>
+						</article>
+						<article class="men__item item-category">
+							<a href="#" class="item-category__image">
+								<img src="img/men/04.webp" alt="Product for men">
+							</a>
+							<div class="item-category__content">
+								<div class="item-category__body">
+									<h3 class="item-category__title">
+										<a href="#" class="item-category__link-title">Polo T-Shirt</a>
+									</h3>
+									<div class="item-category__text">Explore Now!</div>
+								</div>
+								<a href="#" class="item-category__link" aria-label="item-category link"></a>
+							</div>
+						</article>
+						<article class="men__item item-category">
+							<a href="#" class="item-category__image">
+								<img src="img/men/05.webp" alt="Product for men">
+							</a>
+							<div class="item-category__content">
+								<div class="item-category__body">
+									<h3 class="item-category__title">
+										<a href="#" class="item-category__link-title">Hoodies & Sweetshirt</a>
+									</h3>
+									<div class="item-category__text">Explore Now!</div>
+								</div>
+								<a href="#" class="item-category__link" aria-label="item-category link"></a>
+							</div>
+						</article>
+						<article class="men__item item-category">
+							<a href="#" class="item-category__image">
+								<img src="img/men/06.webp" alt="Product for men">
+							</a>
+							<div class="item-category__content">
+								<div class="item-category__body">
+									<h3 class="item-category__title">
+										<a href="#" class="item-category__link-title">Jeans</a>
+									</h3>
+									<div class="item-category__text">Explore Now!</div>
+								</div>
+								<a href="#" class="item-category__link" aria-label="item-category link"></a>
+							</div>
+						</article>
+						<article class="men__item item-category">
+							<a href="#" class="item-category__image">
+								<img src="img/men/07.webp" alt="Product for men">
+							</a>
+							<div class="item-category__content">
+								<div class="item-category__body">
+									<h3 class="item-category__title">
+										<a href="#" class="item-category__link-title">Activewear</a>
+									</h3>
+									<div class="item-category__text">Explore Now!</div>
+								</div>
+								<a href="#" class="item-category__link" aria-label="item-category link"></a>
+							</div>
+						</article>
+						<article class="men__item item-category">
+							<a href="#" class="item-category__image">
+								<img src="img/men/08.webp" alt="Product for men">
+							</a>
+							<div class="item-category__content">
+								<div class="item-category__body">
+									<h3 class="item-category__title">
+										<a href="#" class="item-category__link-title">Boxers</a>
+									</h3>
+									<div class="item-category__text">Explore Now!</div>
+								</div>
+								<a href="#" class="item-category__link" aria-label="item-category link"></a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__women women">
+				<div class="women__container">
+					<h2 class="women__title title-section">Categories For Women</h2>
+					<div class="women__items">
+						<article class="women__item item-category">
+							<a href="#" class="item-category__image">
+								<img src="img/women/01.webp" alt="Product for women">
+							</a>
+							<div class="item-category__content">
+								<div class="item-category__body">
+									<h3 class="item-category__title">
+										<a href="#" class="item-category__link-title">Hoodies & Sweetshirt</a>
+									</h3>
+									<div class="item-category__text">Explore Now!</div>
+								</div>
+								<a href="#" class="item-category__link" aria-label="item-category link"></a>
+							</div>
+						</article>
+						<article class="women__item item-category">
+							<a href="#" class="item-category__image">
+								<img src="img/women/02.webp" alt="Product for women">
+							</a>
+							<div class="item-category__content">
+								<div class="item-category__body">
+									<h3 class="item-category__title">
+										<a href="#" class="item-category__link-title">Coats & Parkas</a>
+									</h3>
+									<div class="item-category__text">Explore Now!</div>
+								</div>
+								<a href="#" class="item-category__link" aria-label="item-category link"></a>
+							</div>
+						</article>
+						<article class="women__item item-category">
+							<a href="#" class="item-category__image">
+								<img src="img/women/03.webp" alt="Product for women">
+							</a>
+							<div class="item-category__content">
+								<div class="item-category__body">
+									<h3 class="item-category__title">
+										<a href="#" class="item-category__link-title">Tees & T-Shirt</a>
+									</h3>
+									<div class="item-category__text">Explore Now!</div>
+								</div>
+								<a href="#" class="item-category__link" aria-label="item-category link"></a>
+							</div>
+						</article>
+						<article class="women__item item-category">
+							<a href="#" class="item-category__image">
+								<img src="img/women/04.webp" alt="Product for women">
+							</a>
+							<div class="item-category__content">
+								<div class="item-category__body">
+									<h3 class="item-category__title">
+										<a href="#" class="item-category__link-title">Boxers</a>
+									</h3>
+									<div class="item-category__text">Explore Now!</div>
+								</div>
+								<a href="#" class="item-category__link" aria-label="item-category link"></a>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="page__brands brands">
+				<div class="brands__container">
+					<h2 class="brands__title">Top Brands Deal</h2>
+					<h3 class="brands__label">Up To <span>60%</span> off on brands</h3>
+					<ul class="brands__list">
+						<li class="brands__item">
+							<img src="img/brands/nike.webp" alt="Nike">
+						</li>
+						<li class="brands__item">
+							<img src="img/brands/hm.webp" alt="H&M">
+						</li>
+						<li class="brands__item">
+							<img src="img/brands/levis.webp" alt="Levis">
+						</li>
+						<li class="brands__item">
+							<img src="img/brands/uspolo.webp" alt="US Polo">
+						</li>
+						<li class="brands__item">
+							<img src="img/brands/puma.webp" alt="Puma">
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="page__limelight limelight">
+				<div class="limelight__container">
+					<h2 class="limelight__title title-section">In The Limelight</h2>
+					<div class="limelight__items">
+						<article class="limelight__item item-limelight">
+							<a href="#" class="item-limelight__image">
+								<img src="img/limelight/01.webp" alt="Product">
+							</a>
+							<button type="button" class="item-limelight__favorite" aria-label="favorite button">
+								<img src="img/icons/favorite.svg" alt="favorite">
+							</button>
+							<div class="item-limelight__content">
+								<div class="item-limelight__body">
+									<h3 class="item-limelight__title">
+										<a href="#" class="item-limelight__link-title">Black Sweatshirt with ....</a>
+									</h3>
+									<div class="item-limelight__text">Jhanvi’s Brand!</div>
+								</div>
+								<div class="item-limelight__price">$123.00</div>
+							</div>
+						</article>
+						<article class="limelight__item item-limelight">
+							<a href="#" class="item-limelight__image">
+								<img src="img/limelight/02.webp" alt="Product">
+							</a>
+							<button type="button" class="item-limelight__favorite" aria-label="favorite button">
+								<img src="img/icons/favorite.svg" alt="favorite">
+							</button>
+							<div class="item-limelight__content">
+								<div class="item-limelight__body">
+									<h3 class="item-limelight__title">
+										<a href="#" class="item-limelight__link-title">line Pattern Black H...</a>
+									</h3>
+									<div class="item-limelight__text">AS’s Brand</div>
+								</div>
+								<div class="item-limelight__price">$37.00</div>
+							</div>
+						</article>
+						<article class="limelight__item item-limelight">
+							<a href="#" class="item-limelight__image">
+								<img src="img/limelight/03.webp" alt="Product">
+							</a>
+							<button type="button" class="item-limelight__favorite" aria-label="favorite button">
+								<img src="img/icons/favorite.svg" alt="favorite">
+							</button>
+							<div class="item-limelight__content">
+								<div class="item-limelight__body">
+									<h3 class="item-limelight__title">
+										<a href="#" class="item-limelight__link-title">Black Shorts</a>
+									</h3>
+									<div class="item-limelight__text">MM’s Brand</div>
+								</div>
+								<div class="item-limelight__price">$37.00</div>
+							</div>
+						</article>
+						<article class="limelight__item item-limelight">
+							<a href="#" class="item-limelight__image">
+								<img src="img/limelight/04.webp" alt="Product">
+							</a>
+							<button type="button" class="item-limelight__favorite" aria-label="favorite button">
+								<img src="img/icons/favorite.svg" alt="favorite">
+							</button>
+							<div class="item-limelight__content">
+								<div class="item-limelight__body">
+									<h3 class="item-limelight__title">
+										<a href="#" class="item-limelight__link-title">Levender Hoodie with ....</a>
+									</h3>
+									<div class="item-limelight__text">Nike’s Brand</div>
+								</div>
+								<div class="item-limelight__price">$119.00</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<footer class="footer">Footer</footer>
+</body>
+
+</html>
