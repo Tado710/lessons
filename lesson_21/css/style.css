@@ -758,6 +758,7 @@ body {
   font-weight: 500;
   line-height: 1.47;
   letter-spacing: 0.315px;
+  text-transform: capitalize;
 }
 @media (max-width: 720px) {
   .content-hero__subtitle {
