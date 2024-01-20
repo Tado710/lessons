@@ -1093,8 +1093,8 @@ body {
 	// .form-book__input
 	&__input {
 		height: toRem(65);
-		padding: 0 toRem(33);
-		flex: 1 1 auto;
+		width: 100%;
+		padding: 0 toRem(33);	
 		background-color: #f8f8f8;
 		border: toRem(1) solid #ddd;
 	}
