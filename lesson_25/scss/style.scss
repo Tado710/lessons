@@ -1,0 +1,80 @@
+@use "sass:math";
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1170;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Шрифти
+@import "_fonts.scss";
+// Обнулення
+@import "_reset.scss";
+// Компоненти
+@import "_common.scss";
+// Функції
+@import "_functions.scss";
+
+body {
+	font-size: toRem(20);
+	color: #000;
+	background-color: lightgrey;
+}
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.wrapper main {
+	flex-grow: 1;
+}
+
+.page {
+	padding: toRem(15);
+}
+.items {
+	padding: toRem(25);
+}
+.item {
+	&:not(:last-child) {
+		margin-bottom: toRem(15);
+	}
+	font-size: toRem(23);
+	font-weight: 600;
+	color:brown;
+}
+
+.text {
+	&:not(:last-child) {
+		margin-bottom: toRem(25);
+	}
+	p {
+		&:not(:last-child) {
+			margin-bottom: toRem(10);
+		}
+	}
+}
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto toRem(25);
+	padding: toRem(15) toRem(22);
+	text-transform: uppercase;
+	font-weight: 600;
+	color: white;
+	background-color: blue;
+}
+
+.link {
+	font-size: toRem(22);
+	font-weight: 700;
+	color: orange;
+}
